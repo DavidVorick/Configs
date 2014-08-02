@@ -1,0 +1,34 @@
+general {
+	colors = true
+	interval = 3
+}
+
+order += "wireless wlan0"
+order += "ethernet eth0"
+order += "battery 0"
+order += "load"
+order += "time"
+
+wireless wlan0 {
+	format_up = "W: %ip at %essid (%quality), %bitrate"
+	format_down = "W: down"
+}
+
+ethernet eth0 {
+	format_up = "E: %ip, %bitrate"
+	format_down = "E: down"
+}
+
+battery 0 {
+	format = "%status %percentage"
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 15
+}
+
+time {
+	format = "%Y-%m-%d %H:%M:%S"
+}
+
+load {
+	format = "%1min, %5min, %15min"
+}
