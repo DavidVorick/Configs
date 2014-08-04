@@ -1,0 +1,17 @@
+x11-terms/rxvt-unicode -vanilla 256-color alt-font-width blink buffer-on-clear fading-colors iso14755 wcwidth
+
+#################################################
+# The remaining items are from autounmask-write #
+#################################################
+
+# required by x11-libs/glamor-0.6.0
+# required by x11-drivers/xf86-video-ati-7.3.0[glamor]
+# required by x11-base/xorg-drivers-1.15[video_cards_radeon]
+# required by x11-base/xorg-server-1.15.0[xorg]
+# required by x11-drivers/xf86-video-intel-2.21.15[dri]
+=media-libs/mesa-10.0.4 gbm xa
+# required by x11-drivers/xf86-video-vmware-13.0.1-r1
+# required by x11-base/xorg-drivers-1.15[video_cards_vmware]
+# required by x11-base/xorg-server-1.15.0[xorg]
+# required by x11-drivers/xf86-video-intel-2.21.15[dri]
+=x11-libs/libdrm-2.4.52 libkms
