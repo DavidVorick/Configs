@@ -1,0 +1,4 @@
+#!/bin/sh
+rmmod r8192ee
+modprobe r8192ee
+/etc/init.d/wicd restart
